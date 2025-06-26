@@ -1,0 +1,310 @@
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+.page-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f5f5; /* soft tropical tone */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  background-color: black;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.title {
+  color: white;
+}
+
+/* ----- Nav Menu ----- */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  background-color: black;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  padding: 8px 12px;
+  background: #fff;
+  border: 1px solid #999;
+  border-radius: 4px;
+  color: black;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+  background: black;
+  color: white;
+}
+
+.home {
+  /* padding: 20px; */
+  text-align: center;
+}
+
+.home-video {
+  width: 100vw;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.info-box {
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.25rem; /* Increased from 1.1rem */
+  line-height: 1.8; /* Better spacing between lines */
+  margin: 40px auto;
+  padding: 40px; /* More breathing room */
+  max-width: 1000px; /* Wider content box */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* ----- Food ----- */
+
+.food {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.activities {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+/* ---------------------------------------- */
+.activities-card-container {
+  height: 450px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.activities-images {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ------------------------------------------ */
+.food-column {
+  width: 30%;
+  text-align: center;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image-placeholder {
+  height: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.food-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.food-label {
+  padding: 16px;
+  background-color: #e0f2f1;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* --------------- Transportation --------------- */
+.transpo-container {
+  /* border: solid red; */
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+}
+
+.transpo-title {
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.25rem; /* Increased from 1.1rem */
+  line-height: 1.8; /* Better spacing between lines */
+  margin: 40px auto;
+  padding: 40px; /* More breathing room */
+  max-width: 1000px; /* Wider content box */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.arriving {
+  /* border: solid blue; */
+  width: 45%;
+}
+
+.transpo-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --------------- Contact/Faqs --------------- */
+.faqs-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.faqs-title {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/*  */
+.contact-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+/* --------------- Footer --------------- */
+footer {
+  background-color: black;
+  padding: 20px 10px;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  margin-top: 40px;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-menu li {
+  margin: 5px 15px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-note {
+  font-size: 0.9em;
+  color: white;
+}
